@@ -570,7 +570,7 @@ dependencies = [
  "criterion",
  "document-features",
  "fast_image_resize",
- "image",
+ "image 0.25.6 (git+https://github.com/kcking-openai/image)",
  "itertools 0.14.0",
  "libvips",
  "nix",
@@ -744,9 +744,9 @@ dependencies = [
 
 [[package]]
 name = "image"
-version = "0.25.5"
+version = "0.25.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cd6f44aed642f18953a158afeb30206f4d50da59fbc66ecb53c66488de73563b"
+checksum = "db35664ce6b9810857a38a906215e75a9c879f0696556a39f59c62829710251a"
 dependencies = [
  "bytemuck",
  "byteorder-lite",
@@ -763,6 +763,19 @@ dependencies = [
  "tiff",
  "zune-core",
  "zune-jpeg",
+]
+
+[[package]]
+name = "image"
+version = "0.25.6"
+source = "git+https://github.com/kcking-openai/image#8c0a1197a12ce30a2915a81ffe8d2a10cd48addc"
+dependencies = [
+ "bytemuck",
+ "byteorder-lite",
+ "num-traits",
+ "png",
+ "ravif",
+ "rayon",
 ]
 
 [[package]]
@@ -1321,9 +1334,9 @@ dependencies = [
 
 [[package]]
 name = "ravif"
-version = "0.11.11"
+version = "0.11.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2413fd96bd0ea5cdeeb37eaf446a22e6ed7b981d792828721e74ded1980a45c6"
+checksum = "d6a5f31fcf7500f9401fea858ea4ab5525c99f2322cfcee732c0e6c74208c0c6"
 dependencies = [
  "avif-serialize",
  "imgref",
@@ -1402,7 +1415,7 @@ dependencies = [
  "clap-verbosity-flag",
  "env_logger",
  "fast_image_resize",
- "image",
+ "image 0.25.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "log",
  "once_cell",
 ]
